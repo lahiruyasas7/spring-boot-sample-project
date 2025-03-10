@@ -31,4 +31,10 @@ public class UserService {
         userRepo.save(modelMapper.map(userDTO, User.class));
         return userDTO;
     }
+
+    //update if user or insert new user
+    public userDTO updateUser(userDTO userDTO) {
+        userRepo.save(modelMapper.map(userDTO, User.class));
+        return userDTO;
+    }
 }
